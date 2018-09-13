@@ -158,8 +158,15 @@ h1 {
 .p-subtitle {
   margin-top: -20px;
   font-style: italic;
+  color: #767676
 }
 
 .navbar-inner {
   background: transparent;
+}
+
+.hint>a {
+  /* font-weight: bold; */
+  font-style: normal;
+  text-decoration: underline;
 }
