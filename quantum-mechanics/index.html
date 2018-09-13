@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quantum Mechanics - PMP</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="../img/apple-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="PMP - QM">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">
+    <img src="../img/logo_transparent.png" width="30" height="30" class="d-inline-block align-top">Pretty Much Physics
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="../classical-mechanics/index.html">Classical Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../electromagnetism/index.html">Electrodynamics</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="">Quantum Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../statistical-mechanics/index.html">Statistical Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../relativity/index.html">Relativity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../mathematics/index.html">Mathematics</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="../about/index.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style='background:linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url("../img/cover-qm.png");background-size: 700px 350px;'>
+    <h1 class="display-4">Quantum Mechanics</h1>
+    <p class="lead">The main topics here are the mathematical foundation of Hilbert spaces, understanding the Schrödinger equation for bound states and investigating scattering processes. </p>
+  </div>
+
+  <div class="container" id="top-container">
+    <h4>Mathematical Foundation</h4>
+    <p class="p-subtitle">Hilbert spaces, operators, bras and kets. </p>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-TsPqK9kmq9HH">
+          <h5 class="mb-0">Hermitean Operators Have Real Eigenvalues</h5>
+        </div>
+        <div id="collapse-TsPqK9kmq9HH" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              A fundamental axiom of quantum mechanics is that observables are represented by hermitean operators acting in a Hilbert space. The reason behind this is that the result of a measurement should yield a real number instead of a complex one.
+            </p>
+            <p>
+              Show that the eigenvalues of a hermitean operator $A$ are real! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-TsPqK9kmq9HH" aria-expanded="false" aria-controls="collapse-hint-TsPqK9kmq9HH">
+                Hint
+              </button>
+            </p>
+            <p class="collapse hint" id="collapse-hint-TsPqK9kmq9HH">
+              For a hermitean operator, $A=A^\dagger$.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+    </div>
+
+
+    <h4>Schrödinger's Equation</h4>
+    <p class="p-subtitle">Time-independence, bound states and eigenenergies. </p>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-xWLbZnxma78g">
+          <h5 class="mb-0">The Time-Independent Schrödinger Equation</h5>
+        </div>
+        <div id="collapse-xWLbZnxma78g" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>The time-dependent Schrödinger equation in one dimension is given by $$H\psi(x,t) = -\text i\hbar\frac{\text d}{\text dt}\psi(x,t),$$ where $H$ is the Hamiltonian of the system. </p>
+            <p>Using an ansatz for the wavefunction $\psi(t)$, show that the time-independent Schrödinger equation is given by $H\psi(x) = E\psi(x)$! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-xWLbZnxma78g" aria-expanded="false" aria-controls="collapse-hint-xWLbZnxma78g">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-xWLbZnxma78g">
+              Use a separating ansatz like $\psi(x,t)=\psi(x)f(t)$ with a suitable function $f(t)$.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-71zd4TI5bBZw">
+          <h5 class="mb-0">Free Particle (1D)</h5>
+        </div>
+        <div id="collapse-71zd4TI5bBZw" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>The Schrödinger equation for a free particle in one dimension is given by $H\psi = E\psi$, where $H$ is the free Hamiltonian, $$H_\text{free} = -\frac{\hbar^2}{2m}\frac{\text d^2}{\text dx^2}.$$</p>
+            <p>Using an ansatz for the wavefunction $\psi(x)$, solve the Schrödinger equation and calculate the eigen energies! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-71zd4TI5bBZw" aria-expanded="false" aria-controls="collapse-hint-71zd4TI5bBZw">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-71zd4TI5bBZw">
+              A suitable ansatz would be $\psi(x) = A\, \text e^{\text i kx}$ with $A,k\in\mathbb R$.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-M7Ddm0Tj0C6U">
+          <h5 class="mb-0">Particle with a Constant Potential (1D)</h5>
+        </div>
+        <div id="collapse-M7Ddm0Tj0C6U" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>A particle of mass $m$ is travelling in a constant potential $V(x)=V_0$. </p>
+            <p>Solve the one-dimensional Schrödinger equation to get the wave function $\psi(x)$ and the eigen energies $E$ ($E>V_0$)! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-M7Ddm0Tj0C6U" aria-expanded="false" aria-controls="collapse-hint-M7Ddm0Tj0C6U">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-M7Ddm0Tj0C6U">
+              This case is very similar to the one without any potential.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-nczsEMJ1AO9m">
+          <h5 class="mb-0">Infinite Square Well (1D)</h5>
+        </div>
+        <div id="collapse-nczsEMJ1AO9m" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>A particle of mass $m$ is trapped in an infinite potential well, $$V(x)=\begin{cases}0 & |x|\le a\\+\infty & |x|>a\end{cases}.$$</p>
+            <p>Find the bound-state wave functions and their energies (Don't forget to normalize the wave functions)! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-nczsEMJ1AO9m" aria-expanded="false"
+                aria-controls="collapse-hint-nczsEMJ1AO9m">
+                  Hint
+                </button></p>
+            <p class="collapse hint" id="collapse-hint-nczsEMJ1AO9m">
+              ...
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-rDyt6y4pQlc4">
+          <h5 class="mb-0">Finite Square Well (1D)</h5>
+        </div>
+        <div id="collapse-rDyt6y4pQlc4" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>...</p>
+            <p>..! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-rDyt6y4pQlc4" aria-expanded="false" aria-controls="collapse-hint-rDyt6y4pQlc4">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-rDyt6y4pQlc4">
+              ...
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-YB4ztinCxjqv">
+          <h5 class="mb-0">Delta Potential (1D)</h5>
+        </div>
+        <div id="collapse-YB4ztinCxjqv" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>...</p>
+            <p>..! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-YB4ztinCxjqv" aria-expanded="false" aria-controls="collapse-hint-YB4ztinCxjqv">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-YB4ztinCxjqv">
+              ...
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-wVDSVqP1ueqd">
+          <h5 class="mb-0">Infinite Square Well (2D)</h5>
+        </div>
+        <div id="collapse-wVDSVqP1ueqd" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              ...
+            </p>
+            <p>..! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-wVDSVqP1ueqd" aria-expanded="false" aria-controls="collapse-hint-wVDSVqP1ueqd">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-wVDSVqP1ueqd">
+              ...
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-qcspC5O3of3y">
+          <h5 class="mb-0">Infinite Square Well (3D)</h5>
+        </div>
+        <div id="collapse-qcspC5O3of3y" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              ...
+            </p>
+            <p>..! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-qcspC5O3of3y" aria-expanded="false" aria-controls="collapse-hint-qcspC5O3of3y">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-qcspC5O3of3y">
+              ...
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+    </div>
+
+
+    <h4>Hydrogen Atom</h4>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-WTrHk2P6gTzj">
+          <h5 class="mb-0">Problem Title</h5>
+        </div>
+        <div id="collapse-WTrHk2P6gTzj" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>...</p>
+            <p>..! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-WTrHk2P6gTzj" aria-expanded="false" aria-controls="collapse-hint-WTrHk2P6gTzj">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hint-WTrHk2P6gTzj">
+              ...
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=2jr37XNx28o" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-CvpLZiK16gGN">
+          <h5 class="mb-0">Problem Title</h5>
+        </div>
+        <div id="collapse-CvpLZiK16gGN" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>...</p>
+            <ol type="a" start="1">
+              <li>
+                <p>..! </p>
+              </li>
+            </ol>
+            <ol type="a" start="2">
+              <li>
+                <p>..!</p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/2jr37XNx28o?t=2m29s" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span>&emsp;</span>
+  </div>
+  <br>
+
+
+
+  <script>
+    $(function() {
+      $(document).click(function(event) {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+  </script>
+
+
+  <footer class="footer">
+    <div class="container" align="center">
+      <span class="text-muted">&copy; 2018 Pretty Much Physics - Visit us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">YouTube</a><!-- or support us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">Patreon</a>!--></span>
+    </div>
+  </footer>
+</body>
+
+</html>
