@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Classical Mechanics - PMP</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">
+    <img src="../img/logo_transparent.png" width="30" height="30" class="d-inline-block align-top">Pretty Much Physics
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item active">
+          <a class="nav-link" href="">Classical Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../electromagnetism/index.html">Electromagnetism</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../quantum-mechanics/index.html">Quantum Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../statistical-mechanics/index.html">Statistical Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../relativity/index.html">Relativity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../mathematics/index.html">Mathematics</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="../about/index.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style='background:linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url("../img/cover-cm.png");background-size: 700px 320px;'>
+    <h1 class="display-4">Classical Mechanics</h1>
+    <p class="lead">The main topics here are Newton's laws and the Lagrangian formulation of classical mechanics. </p>
+  </div>
+
+  <div class="container" id="top-container">
+    <h4>Moment of Inertia</h4>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-orY5WypIVsZc">
+          <h5 class="mb-0">Point Mass</h5>
+        </div>
+        <div id="collapse-orY5WypIVsZc" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            A point-like object of mass $m$ is travelling around the origin of the coordinate system in a circle of radius $R$ within the $xy$-plane. <br>
+            <img src="img/moment-of-inertia-point.png" class="center" style="width=5%">
+            <br>
+            <p>Calculate the point's moment of inertia for this motion! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-orY5WypIVsZc" aria-expanded="false" aria-controls="collapse-hint-orY5WypIVsZc">
+                  Hint
+                </button></p>
+            <p class="collapse hint" id="collapse-hint-orY5WypIVsZc">
+              The moment of inertia is given by $I = \int r_\perp^2 \text dm$.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-5Lxg7lJdaghJ">
+          <h5 class="mb-0">Rod</h5>
+        </div>
+        <div id="collapse-5Lxg7lJdaghJ" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            A rod of length $L$, negligible width and height ($h\ll 1$, $w\ll 1$) and constant density $\rho$ is rotating around a fixed axis. <br>
+            <img src="img/moment-of-inertia-rod.png" class="center">
+            <br>
+            <ol type="a" start="1">
+              <li>
+                <p>Calculate the rod's moment of inertia for a rotation around an axis through the center of mass! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintA-5Lxg7lJdaghJ
+   " aria-expanded="false" aria-controls="collapse-hintA-5Lxg7lJdaghJ">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintA-5Lxg7lJdaghJ">
+                  The moment of inertia is given by $I = \int r_\perp^2 \text dm$.
+                </p>
+              </li>
+            </ol>
+            <ol type="a" start="2">
+              <li>
+                <p>Calculate the moment of inertia for a rotation around one end of the rod! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintB-5Lxg7lJdaghJ" aria-expanded="false
+   " aria-controls="collapse-hintB-5Lxg7lJdaghJ">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintB-5Lxg7lJdaghJ">
+                  Use the parallel axis theorem.
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-FRsi6WagU1ey">
+          <h5 class="mb-0">Disk</h5>
+        </div>
+        <div id="collapse-FRsi6WagU1ey" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            A disk of radius $R$, height $h$ and constant density $\rho$ is rotating around a fixed axis. <br>
+            <img src="img/moment-of-inertia-disk.png" class="center"><br>
+            <ol type="a">
+              <li>
+                <p>Calculate the disk's moment of inertia for a rotation around an axis through the center of mass perpendicular to the disk! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse
+   " data-target="#collapse-hintA-FRsi6WagU1ey" aria-expanded="false" aria-controls="collapse-hintA-FRsi6WagU1ey">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintA-FRsi6WagU1ey">
+                  The moment of inertia is given by $I = \int r_\perp^2 \text dm$.
+                </p>
+              </li>
+            </ol>
+            <ol type="a" start="2">
+              <li>
+                <p>Like (a) but move the axis of rotation to the boundary of the disk! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintB-FRsi6WagU1ey" aria-expanded="false
+   " aria-controls="collapse-hintB-FRsi6WagU1ey">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintB-FRsi6WagU1ey">
+                  Use the parallel axis theorem.
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+    </div>
+
+
+    <h4>Lagrangian Formulation</h4>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-MlQqu4zHNAdc">
+          <h5 class="mb-0">Deriving the Euler-Lagrange Equations</h5>
+        </div>
+        <div id="collapse-MlQqu4zHNAdc" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>The Lagrangian of a system is given by $L(q_i,\dot q_i)=T-V$, where $T$ is the kinetic energy and $V$ is the potential energy and $q_i$ are generalized coordinates for $N$ degrees of freedom $(i=1\ldots N)$.</p>
+            <p>Use the principle of least action to derive the Euler-Lagrange Equations for this system! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-MlQqu4zHNAdc
+   " aria-expanded="false" aria-controls="collapse-hint-MlQqu4zHNAdc">
+                  Hint
+                </button></p>
+            <p class="collapse hint" id="collapse-hint-MlQqu4zHNAdc">
+              The principle of least action states that a system will behave in such a way that the action, $$S = \int \text dt\,L(q_i, \dot q_i) ,$$ takes on an extremal value: $\delta S = 0$.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=TiWilQkZDOA" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-Ula8rokZva9B">
+          <h5 class="mb-0">Deriving the Euler-Lagrange Equations (Field Theory)</h5>
+        </div>
+        <div id="collapse-Ula8rokZva9B" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>The Lagrangian density of a system is given by $\mathcal L(\varphi_i,\partial_\mu \varphi_i)$, where $\varphi_i(x^\mu)$ are the fields that correspond to $N$ degrees of freedom $(i=1\ldots N)$.</p>
+            <p>Use the principle of least action to derive the Euler-Lagrange Equations for this system! &ensp;<button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-Ula8rokZva9B
+   " aria-expanded="false" aria-controls="collapse-hint-Ula8rokZva9B">
+                  Hint
+                </button></p>
+            <p class="collapse hint" id="collapse-hint-Ula8rokZva9B">
+              The principle of least action states that a system will behave in such a way that the action, $$S = \int\text d^4x\, \mathcal L(\varphi_i,\partial_\mu \varphi_i) ,$$ takes on an extremal value: $\delta S = 0$.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=TiWilQkZDOA" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h4>Hamiltonian Formulation</h4>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-WTrHk2P6gTzj">
+          <h5 class="mb-0">Deriving Hamilton's Equations of Motion</h5>
+        </div>
+        <div id="collapse-WTrHk2P6gTzj" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>The Hamiltonian of a system is given by $H(q_i,p_i)=T+V$, where $T$ is the kinetic energy and $V$ is the potential energy and $q_i$ are generalized coordinates for $N$ degrees of freedom $(i=1\ldots N)$.</p>
+            <p>Use the definition of the Hamiltonian as the Legendre transformation of the Lagrangian to derive Hamilton's equations of motion! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-WTrHk2P6gTzj" aria-expanded="false" aria-controls="collapse-hint-WTrHk2P6gTzj">
+                  Hint
+                </button></p>
+            <p class="collapse hint" id="collapse-hint-WTrHk2P6gTzj">
+              The Hamiltonian is given by $H(q_i,p_i) = \sum\limits_i p_i \dot q_i -L(q_i, \dot q_i)$.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=2jr37XNx28o" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-CvpLZiK16gGN">
+          <h5 class="mb-0">Hamilton's Equations for a Free Particle</h5>
+        </div>
+        <div id="collapse-CvpLZiK16gGN" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>The Hamiltonian for a free, non-relativistic particle is given by $H(q,p) = \frac{p^2}{2m}$, where $m$ is the particle's mass.</p>
+            <ol type="a" start="1">
+              <li>
+                <p>Apply Hamilton's equations of motion for this system to get two differential equations! </p>
+              </li>
+            </ol>
+            <ol type="a" start="2">
+              <li>
+                <p>Solve these equations!</p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/2jr37XNx28o?t=2m29s" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span>&emsp;</span>
+  </div>
+  <br>
+
+
+
+  <script>
+    $(function() {
+      $(document).click(function(event) {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+  </script>
+
+
+  <footer class="footer">
+    <div class="container" align="center">
+      <span class="text-muted">&copy; 2018 Pretty Much Physics - Visit us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">YouTube</a> <!--or support us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">Patreon</a>!--></span>
+    </div>
+  </footer>
+</body>
+
+</html>

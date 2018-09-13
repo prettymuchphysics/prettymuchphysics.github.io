@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Electromagnetism - PMP</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html">
+    <img src="../img/logo_transparent.png" width="30" height="30" class="d-inline-block align-top">Pretty Much Physics
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="../classical-mechanics/index.html">Classical Mechanics</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="">Electromagnetism</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../quantum-mechanics/index.html">Quantum Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../statistical-mechanics/index.html">Statistical Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../relativity/index.html">Relativity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../mathematics/index.html">Mathematics</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="../about/index.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style='background:linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url("../img/cover-em.png");background-size: 700px 320px;'>
+    <h1 class="display-4">Electromagnetism</h1>
+    <p class="lead">The main topics here are electro- and magnetostatics, their interplay in electromagnetism and wave phenomena that lead to optics. </p>
+  </div>
+
+  <div class="container" id="top-container">
+    <h4>Electrostatics</h4>
+    <p class="p-subtitle">Coulomb's law and the first Maxwell equation. </p>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-8cMPKwWwjRp5">
+          <h5 class="mb-0">Electric Field of Point Charges</h5>
+        </div>
+        <div id="collapse-8cMPKwWwjRp5" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>Two point charges are fixed in a coordinate system. Charge $q_1$ is at position $\textbf r_1 = (x_1,y_1)$ and charge $q_2$ lies at $\textbf r_2 = (x_2,y_2)$.</p>
+            <ol type="a">
+              <li>
+                <p>Calculate the resulting electric field $\textbf E$ for this system at an arbitrary point $\textbf r \neq \{\textbf r_1, \textbf r_2\}$! &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-8cMPKwWwjRp5" aria-expanded="false" aria-controls="collapse-hint-8cMPKwWwjRp5">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hint-8cMPKwWwjRp5">
+                  Since Maxwell's equations are linear equations, you can use superposition.
+                </p>
+              </li>
+            </ol>
+            <ol type="a" start="2">
+              <li>
+                <p>Find the point $\textbf r_0=(x_0,y_0)$ where the electric field vanishes!
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-5Lxg7lJdaghJ">
+          <h5 class="mb-0">Electric Field of Point Charges (2)</h5>
+        </div>
+        <div id="collapse-5Lxg7lJdaghJ" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              Two point-like charges $q_1$ and $q_2$ are located at $\textbf r_1=(0,0,a)$ and $\textbf r_2=(0,0,-a)$.
+            </p>
+            <ol type="a" start="1">
+              <li>
+                <p>Write down the charge density $\rho(\textbf r)$ of this arrangement and calculate the total charge by integrating over it! &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintA-5Lxg7lJdaghJ" aria-expanded="false" aria-controls="collapse-hintA-5Lxg7lJdaghJ">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintA-5Lxg7lJdaghJ">
+                  $Q = \int \text d^3\textbf r\, \rho(\textbf r)$.
+                </p>
+              </li>
+            </ol>
+            <ol type="a" start="2">
+              <li>
+                <p>Calculate the electric field $\textbf E(\textbf r)$ at an arbitrary point $\textbf r \neq \{\textbf r_1, \textbf r_2\}$! What is the electric field along the $x$-axis ($y=z=0$) for (i) $q_1=q_2$ (ii) $q_1=-q_2$? &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintB-5Lxg7lJdaghJ" aria-expanded="false" aria-controls="collapse-hintB-5Lxg7lJdaghJ">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintB-5Lxg7lJdaghJ">
+                  Use superposition.
+                </p>
+              </li>
+            </ol>
+            <ol type="a" start="3">
+              <li>
+                <p>Calculate the force that $q_1$ is applying on $q_2$! &ensp;
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+
+    </div>
+
+
+
+    <span>&emsp;</span>
+  </div>
+  <br>
+
+
+
+  <script>
+    $(function() {
+      $(document).click(function(event) {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+  </script>
+
+
+  <footer class="footer">
+    <div class="container" align="center">
+      <span class="text-muted">&copy; 2018 Pretty Much Physics - Visit us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">YouTube</a> or support us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">Patreon</a>!</span>
+    </div>
+  </footer>
+</body>
+
+</html>

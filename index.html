@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pretty Much Physics</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="">
+    <img src="img/logo_transparent.png" width="30" height="30" class="d-inline-block align-top">Pretty Much Physics
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="classical-mechanics/index.html">Classical Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="electromagnetism/index.html">Electrodynamics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quantum-mechanics/index.html">Quantum Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="statistical-mechanics/index.html">Statistical Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="relativity/index.html">Relativity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mathematics/index.html">Mathematics</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="about/index.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Physics Problems</h1>
+    <p class="lead">Choose a topic.</p><br><br>
+  </div>
+
+  <div class="container">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='classical-mechanics/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="classical-mechanics/index.html">Classical Mechanics</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/cover-cm.png" alt="Classical Mechanics" onclick="location.href='classical-mechanics/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Newton's Laws, Lagrangians, Hamiltonians, Legendre Transformations, ...
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='electromagnetism/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="electromagnetism/index.html">Electromagnetism</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/cover-em.png" alt="Electromagnetism" onclick="location.href='electromagnetism/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Electrostatics, Magnetostatics, Maxwell's Equations, Waves, Optics, ...
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='quantum-mechanics/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="quantum-mechanics/index.html">Quantum Mechanics</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/cover-qm.png" alt="Quantum Mechanics" onclick="location.href='quantum-mechanics/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Hilbert Spaces, Schrödinger's Equation, Hydrogen Atom, ...
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='statistical-mechanics/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="statistical-mechanics/index.html">Statistical Mechanics</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/cover-sm.png" alt="Statistical Mechanics" onclick="location.href='statistical-mechanics/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Thermodynamics, Fermi-Statistics, Bose-Statistics, ...
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='relativity/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="relativity/index.html">Relativity</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/cover-r.png" alt="Relativity" onclick="location.href='relativity/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Special Relativity, Lorentz Transformations, Four-Vectors, General Relativity, ...
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='mathematics/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="mathematics/index.html">Mathematics</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/cover-m.png" alt="Mathematics" onclick="location.href='mathematics/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Analysis, Linear Algebra, Differential Equations, ...
+        </div>
+      </div>
+      <!-- <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='classical-mechanics/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="classical-mechanics/index.html">Quantum Field Theory</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/img.svg" alt="Quantum Field Theory" onclick="location.href='classical-mechanics/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Coming soon!
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='classical-mechanics/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="classical-mechanics/index.html">Cosmology</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/img.svg" alt="Cosmology" onclick="location.href='classical-mechanics/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Coming soon!
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header" onclick="location.href='classical-mechanics/index.html' ;">
+          <h4 class="my-0 font-weight-normal"><a href="classical-mechanics/index.html">Physics GRE</a></h4>
+        </div>
+        <img class="card-img-top overlay rounded" src="img/img.svg" alt="Physics GRE" onclick="location.href='classical-mechanics/index.html' ;" style="cursor:pointer;">
+        <div class="card-body">
+          Coming soon!
+        </div>
+      </div> -->
+    </div>
+
+  </div>
+  <br>
+
+  <script>
+    $(function() {
+      $(document).click(function(event) {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+  </script>
+
+  <footer class="footer">
+    <div class="container" align="center">
+      <span class="text-muted">&copy; 2018 Pretty Much Physics - Visit us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">YouTube</a> or support us on <a href="https://www.youtube.com/channel/UCVa8De6q6aOjtx_TEiDBaMw">Patreon</a>!</span>
+    </div>
+  </footer>
+</body>
+
+</html>
