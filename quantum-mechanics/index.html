@@ -63,7 +63,7 @@
 
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style='background:linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url("../img/cover-qm.png");background-size: 700px 350px;'>
     <h1 class="display-4">Quantum Mechanics</h1>
-    <p class="lead">The main topics here are the mathematical foundation of Hilbert spaces, understanding the Schrödinger equation for bound states and investigating scattering processes. </p>
+    <p class="lead">The main topics here are the mathematical formulation of Hilbert spaces, understanding the Schrödinger equation for bound states and investigating scattering processes. </p>
   </div>
 
   <div class="container" id="top-container">
@@ -100,6 +100,54 @@
     </div>
 
 
+    <h4>Wave Functions</h4>
+    <p class="p-subtitle">Normalization, probability densities. </p>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-LcsdKn0W4xTk">
+          <h5 class="mb-0">One-dimensional Wave function</h5>
+        </div>
+        <div id="collapse-LcsdKn0W4xTk" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              The wave function of a particle is given by, $$\psi(x) = N\, \text e^{-a |x|} \cos (x)\,\text e^{\text i \varphi x},\quad -\infty &lt;x&lt;\infty,$$ where $a>0$ and $\varphi\in\mathbb R$.
+            </p>
+            <ol type="a">
+              <li>
+                <p>
+                  For a given $a$ and $\varphi$, calculate $N$ such that the wave function is normalized! &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintA-LcsdKn0W4xTk" aria-expanded="false" aria-controls="collapse-hintA-LcsdKn0W4xTk">
+                    Hint
+                  </button>
+                </p>
+                <p class="collapse hint" id="collapse-hintA-LcsdKn0W4xTk">
+                  Normalizaion condition: $\int_{-\infty}^\infty \psi^* \psi \stackrel{!}= 1$.
+                </p>
+              </li>
+              <li>
+                <p>
+                  What is the probability of finding the particle in the interval $[-\tfrac{\pi}{2},\tfrac{\pi}{2}]$? &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintB-LcsdKn0W4xTk" aria-expanded="false" aria-controls="collapse-hintB-LcsdKn0W4xTk">
+                    Hint
+                  </button>
+                </p>
+                <p class="collapse hint" id="collapse-hintB-LcsdKn0W4xTk">
+                  Integrate the probability density over a suitable interval.
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+    </div>
+
+
     <h4>Schrödinger's Equation</h4>
     <p class="p-subtitle">Time-independence, bound states and eigenenergies. </p>
     <div class="accordion">
@@ -111,7 +159,7 @@
         <div id="collapse-xWLbZnxma78g" class="collapse" data-parent="#top-container">
           <div class="card-body">
             <p>The time-dependent Schrödinger equation in one dimension is given by $$H\psi(x,t) = -\text i\hbar\frac{\text d}{\text dt}\psi(x,t),$$ where $H$ is the Hamiltonian of the system. </p>
-            <p>Using an ansatz for the wavefunction $\psi(t)$, show that the time-independent Schrödinger equation is given by $H\psi(x) = E\psi(x)$! &ensp;
+            <p>Using an ansatz for the wave function $\psi(t)$, show that the time-independent Schrödinger equation is given by $H\psi(x) = E\psi(x)$! &ensp;
               <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-xWLbZnxma78g" aria-expanded="false" aria-controls="collapse-hint-xWLbZnxma78g">
                 Hint
               </button></p>
@@ -133,7 +181,7 @@
         <div id="collapse-71zd4TI5bBZw" class="collapse" data-parent="#top-container">
           <div class="card-body">
             <p>The Schrödinger equation for a free particle in one dimension is given by $H\psi = E\psi$, where $H$ is the free Hamiltonian, $$H_\text{free} = -\frac{\hbar^2}{2m}\frac{\text d^2}{\text dx^2}.$$</p>
-            <p>Using an ansatz for the wavefunction $\psi(x)$, solve the Schrödinger equation and calculate the eigen energies! &ensp;
+            <p>Using an ansatz for the wave function $\psi(x)$, solve the Schrödinger equation and calculate the eigen energies! &ensp;
               <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-71zd4TI5bBZw" aria-expanded="false" aria-controls="collapse-hint-71zd4TI5bBZw">
                 Hint
               </button></p>
@@ -313,10 +361,10 @@
       </div>
       <!-- ######################## -->
       <div class="card">
-        <div class="card-header" data-toggle="collapse" data-target="#collapse-CvpLZiK16gGN">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-ckv5q0vl1EjT">
           <h5 class="mb-0">Problem Title</h5>
         </div>
-        <div id="collapse-CvpLZiK16gGN" class="collapse" data-parent="#top-container">
+        <div id="collapse-ckv5q0vl1EjT" class="collapse" data-parent="#top-container">
           <div class="card-body">
             <p>...</p>
             <ol type="a" start="1">
