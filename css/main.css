@@ -162,7 +162,8 @@ h1 {
 }
 
 .navbar-inner {
-  background: transparent;
+  background: white;
+  border-bottom: 1px solid #F1F3F5;
 }
 
 .hint>a {
