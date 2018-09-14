@@ -170,3 +170,8 @@ h1 {
   font-style: normal;
   text-decoration: underline;
 }
+
+li>p>a {
+  font-style: italic;
+  text-decoration: underline;
+}

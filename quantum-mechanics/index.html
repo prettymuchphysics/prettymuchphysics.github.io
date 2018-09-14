@@ -100,6 +100,122 @@
         </div>
       </div>
       <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-Aq5s0EUP5PKM">
+          <h5 class="mb-0">Operator Exponentials</h5>
+        </div>
+        <div id="collapse-Aq5s0EUP5PKM" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              Consider a two-dimensional Hilbert space with basis vectors $|b_i\rangle$ ($i=1,2$). A hermitean operator is given by $B = |b_1\rangle\!\langle b_2| + |b_2\rangle\!\langle b_1|$.
+            </p>
+            <ol type="a">
+              <li>
+                <p>
+                  Calculate the operator $\exp(\text i \epsilon B)$ for $\epsilon\in\mathbb R$! &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-Aq5s0EUP5PKM" aria-expanded="false" aria-controls="collapse-hint-Aq5s0EUP5PKM">
+                    Hint
+                  </button>
+                </p>
+                <p class="collapse hint" id="collapse-hint-Aq5s0EUP5PKM">
+                  Use a Taylor series.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calculate $\exp(\text i \epsilon B)|b_1\rangle$!
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-PV2PxgarqngQ">
+          <h5 class="mb-0">Operator Derivatives</h5>
+        </div>
+        <div id="collapse-PV2PxgarqngQ" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              The operators $A(\lambda)$ and $B(\lambda)$ depend on a real parameter $\lambda$, whereas the operator $C$ is independent of $\lambda$. Prove the following statements!
+            </p>
+            <ol type="a">
+              <li>
+                <p>
+                  $\frac{\text d}{\text d\lambda} (AB) = \frac{\text dA}{\text d\lambda}B + A\frac{\text dB}{\text d\lambda}$
+                </p>
+              </li>
+              <li>
+                <p>
+                  $\frac{\text d}{\text d\lambda}A^{-1} = -A^{-1}\frac{\text dA}{\text d\lambda}A^{-1}$
+                </p>
+              </li>
+              <li>
+                <p>
+                  $\frac{\text d}{\text d\lambda}\text e^{\lambda C} = C \text e^{\lambda C}$
+                </p>
+              </li>
+              <li>
+                <p>
+                  $\frac{\text d}{\text d\lambda}A^n = \sum\limits_{k=1}^n A^{k-1} \frac{\text dA}{\text d\lambda}A^{n-k}$
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-mCHt1M7PGEXi">
+          <h5 class="mb-0">Baker-Campbell-Haussdorf (Simplified)</h5>
+        </div>
+        <div id="collapse-mCHt1M7PGEXi" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              If the commutator of $[A,B]$ with the two operators $A$ and $B$ vanishes, that is $[A,[A,B]]=0$ and $[B,[A,B]]=0$, a simplified version of the Baker-Campbell-Haussdorf formula holds: $$\text e^A \,\text e^B = \text e^{A+B+\tfrac{1}{2}[A,B]}.$$
+            </p>
+            <ol type="a">
+              <li>
+                <p>
+                  Prove this statement! &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-mCHt1M7PGEXi" aria-expanded="false" aria-controls="collapse-hint-mCHt1M7PGEXi">
+                    Hint
+                  </button>
+                </p>
+                <p class="collapse hint" id="collapse-hint-mCHt1M7PGEXi">
+                  Construct a differential equation for the operator $\text e^{\lambda A}\text e^{\lambda B}$ in $\lambda$ and integrate it.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Check that this equation can be applied for $A=\hat x$ and $B=\hat p$ and prove the following statement: $$\text e^{-\frac{\text i}{\hbar}ap}\,\text e^{\text ibx}\,\text e^{\frac{\text i}{\hbar}ap} = \text e^{\text i b(x-a)}, \quad a,b\in\mathbb R.$$Note
+                  the connection to the <a href="https://en.wikipedia.org/wiki/Translation_operator_(quantum_mechanics)">translation operator</a> $T(a)$!
+                </p>
+              </li>
+              <li>
+                <p>
+                  Check that this equation can be applied for the creation and annihilation operators of the harmonic oscillator, $A=\hat a$ and $B=\hat a^\dagger$, and prove the following statement: $$\text e^{ca^\dagger-c^* a} = \text e^{-\tfrac{1}{2}|c|^2}\,\text e^{ca^\dagger}\,\text
+                  e^{-c^* a} = \text e^{\tfrac{1}{2}|c|^2}\,\text e^{-ca^\dagger}\,\text e^{c^* a}, \quad c\in\mathbb C.$$
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
     </div>
 
 
@@ -575,6 +691,29 @@
               </button></p>
             <p class="collapse hint" id="collapse-hintA-j1dFxBMMkO2l">
               Show that the position operator can be written as $\hat p = \frac{\text im}{\hbar}[\hat H, \hat x]$ and use this expression in order to calculate the expectation value.
+            </p>
+            <p align="right">
+              <a target="_blank" rel="noopener noreferrer" href="" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-518SOMo8tewn">
+          <h5 class="mb-0">Virial Theorem</h5>
+        </div>
+        <div id="collapse-518SOMo8tewn" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>The Hamiltonian of a system is given by $$H=T+V=\frac{p^2}{2m}+V(x),$$ where the potential is a homogenous function of degree $n$: $V(\lambda x) = \lambda^n V(x)$. </p>
+            <p>Assume the system is in an eigenfunction $\psi$ of the Hamiltonian. Show that the expectation values of kinetic energy and potential energy are related via $$\langle T\rangle = \frac{n}{2}\langle V\rangle,$$where $\langle T\rangle = \langle
+              \psi|T|\psi\rangle$! &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintA-518SOMo8tewn" aria-expanded="false" aria-controls="collapse-hintA-518SOMo8tewn">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hintA-518SOMo8tewn">
+              Invesitgate the expectation value of the commutator of the Hamiltonian with the observable $A:=\frac{1}{2}(xp+px)$.
             </p>
             <p align="right">
               <a target="_blank" rel="noopener noreferrer" href="" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
