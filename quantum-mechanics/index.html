@@ -216,6 +216,71 @@
         </div>
       </div>
       <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-Blo6rADdMHve">
+          <h5 class="mb-0">Proving Bloch's Theorem</h5>
+        </div>
+        <div id="collapse-Blo6rADdMHve" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              Bloch's theorem states that for particles in a perfect crystal of lattice size $a$, there is a basis of energy eigenstates that can be written as, $$\psi(\textbf r)=\text e^{\text i\textbf {kr}}u(\textbf r),$$where $u(\textbf r)$ has the same periodicity
+              as the lattice: $u(x+a)=u(x)$. This is called a Bloch wave.
+            </p>
+            <p>
+              Verify Bloch's theorem via the eigenvalue equation of the translation operator $T(a)$ &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-Blo6rADdMHve" aria-expanded="false" aria-controls="collapse-hint-Blo6rADdMHve">
+                Hint
+              </button>
+            </p>
+            <p class="collapse hint" id="collapse-hint-Blo6rADdMHve">
+              The translation operator is defined as $T(\Delta\textbf x)=\text e^{-\text i \Delta\textbf{x}\cdot \textbf{p}/\hbar}$.
+            </p>
+            <p align="right">
+              <!-- <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-NBLOH1AHsvR1">
+          <h5 class="mb-0">Parity Operator</h5>
+        </div>
+        <div id="collapse-NBLOH1AHsvR1" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              For a one-dimensional system, the parity operator $\Pi$ acts on the state $|x\rangle$ as $$\Pi|x\rangle = |-\!x\rangle,$$where the state is defined via $\hat x|x\rangle = x|x\rangle$.
+            </p>
+            <p>
+              Prove the following statements!
+            </p>
+            <ol type="a">
+              <li>
+                <p>
+                  $\Pi = \Pi ^\dagger = \Pi^{-1}$, therefore its eigenvalues are $\pm 1$.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If the potential obeys $V(-x)=V(x)$, the eigenfunctions of the Hamiltonian are either even or odd functions in $x$. &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hint-NBLOH1AHsvR1" aria-expanded="false" aria-controls="collapse-hint-NBLOH1AHsvR1">
+                    Hint
+                  </button>
+                </p>
+                <p class="collapse hint" id="collapse-hint-NBLOH1AHsvR1">
+                  Show that the eigenvalue of the parity operator (that is, whether a function is even or odd) is a conserved quantity.
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <!-- <a target="_blank" rel="noopener noreferrer" href="" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
     </div>
 
 
@@ -677,6 +742,106 @@
       <!-- ######################## -->
     </div>
 
+
+
+
+    <h4>Harmonic Oscillator</h4>
+    <p class="p-subtitle">Ladder operators, coherent states. </p>
+    <div class="accordion">
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-5Inkb84lGTWc">
+          <h5 class="mb-0">Parity Operator</h5>
+        </div>
+        <div id="collapse-5Inkb84lGTWc" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              For a one-dimensional system, the parity operator $\Pi$ acts on the state $|x\rangle$ as $$\Pi|x\rangle = |-\!x\rangle,$$where the state is defined via $\hat x|x\rangle = x|x\rangle$.
+            </p>
+            <p>
+              Show that the parity operator for the harmonic oscillator can be written as $\Pi = \text e^{\text i\pi \, a^\dagger a}$!
+            </p>
+            <p align="right">
+              <!-- <a target="_blank" rel="noopener noreferrer" href="" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-8neQx8H0Xt0H">
+          <h5 class="mb-0">Coherent States</h5>
+        </div>
+        <div id="collapse-8neQx8H0Xt0H" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              Coherent states in the quantum harmonic oscillator are defined via the eigenvalue equation of the annihilation operator: $a|\alpha\rangle = \alpha |\alpha\rangle$, where $\alpha\in\mathbb C$.
+            </p>
+            <ol type="a">
+              <li>
+                <p>
+                  Show that $|\alpha\rangle = \text e^{-|\alpha|^2/2}\,\text e^{\alpha a^\dagger}|0\rangle = \text e^{-|\alpha|^2/2}\, \sum\limits_{n=0}^{\infty}\frac{\alpha^n}{\sqrt{n!}}|n\rangle$!
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calculate the uncertainties of position $\Delta x$ and momentum $\Delta p$ and show that coherent states fulfil the equality in Heisenberg's uncertainty relation!
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calculate the energy uncertainty $\Delta E$ of a coherent state!
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <!-- <a target="_blank" rel="noopener noreferrer" href="" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-z2EOiG8u9RgV">
+          <h5 class="mb-0">2D Harmonic Oscillator - Eigenvalues</h5>
+        </div>
+        <div id="collapse-z2EOiG8u9RgV" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              The potential of an <span class="mark-tooltip" data-toggle="tooltip" title="The angular frequencies in x-direction and y-direction are equally large">isotropic</span>, two-dimensional harmonic oscillator is given by $V(x,y) = \tfrac{1}{2}m\omega^2(x^2+y^2)$.
+            </p>
+            <ol type="a">
+              <li>
+                <p>
+                  Calculate the energy eigenvalues via the creation and annihilation operators $a_x$, $a_x^\dagger$, $a_y$ and $a_y^\dagger$ that are constructed via $\{x,y,p_x,p_y\}$.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calculate the energy eigenvalues via the creation and annihilation operators for right- and left-circular quanta, defined by: $$a_R = \frac{1}{\sqrt 2}(a_x-\text ia_y),\quad a_L = \frac{1}{\sqrt 2}(a_x+\text ia_y). $$
+                </p>
+              </li>
+              <li>
+                <p>
+                  Show that the eigenfunctions of <strong>b.</strong> are eigenfunctions of the $z$-component of the angular momentum $L_z = xp_y-yp_x$.
+              </li>
+            </ol>
+            <p align="right">
+              <!-- <a target="_blank" rel="noopener noreferrer" href="" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+    </div>
+
+
+
+
+
     <span>&emsp;</span>
 
   </div>
@@ -691,6 +856,14 @@
       });
     });
   </script>
+
+
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
 
 
   <!-- <script>
