@@ -194,3 +194,9 @@ li>p>a {
 .textbook-header {
   margin-top: 100px;
 }
+
+/* TOOLTIPS */
+
+.mark-tooltip {
+  color: #7f9fd0;
+}
