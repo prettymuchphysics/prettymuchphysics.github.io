@@ -190,3 +190,7 @@ li>p>a {
 .cover-img-div:hover img {
   transform: scale(1.1);
 }
+
+.textbook-header {
+  margin-top: 100px;
+}
