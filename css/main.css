@@ -221,18 +221,3 @@ li>p>a {
 .card-header h4 {
   padding-top: 0px;
 }
-
-/* Choose class depending on how many elements in row */
-
-.my-card-1 {
-  justify-content: flex-start;
-}
-
-.my-card-2>div {
-  justify-content: flex-start;
-  padding-right: 30px;
-}
-
-.my-card-3 {
-  justify-content: space-between;
-}
