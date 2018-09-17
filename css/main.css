@@ -215,3 +215,9 @@ li>p>a {
   /* line-height: 15px; */
   margin-bottom: 5px;
 }
+
+/* no padding for /index.html */
+
+.card-header h4 {
+  padding-top: 0px;
+}
