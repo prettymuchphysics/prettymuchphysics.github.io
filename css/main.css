@@ -44,7 +44,9 @@ h3 {
 }
 
 h4 {
-  margin-top: 40px;
+  padding-top: 60px;
+  /* Fixes navbar hiding section when linking to it */
+  margin-top: -40px;
   margin-bottom: 20px;
 }
 
@@ -199,4 +201,17 @@ li>p>a {
 
 .mark-tooltip {
   color: #7f9fd0;
+}
+
+/* Table of Contents */
+
+.toc-card {
+  display: table;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.toc-p {
+  /* line-height: 15px; */
+  margin-bottom: 5px;
 }

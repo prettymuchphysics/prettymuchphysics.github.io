@@ -69,8 +69,27 @@
     <p class="lead">The main topics here are Newton's laws and the Lagrangian formulation of classical mechanics. </p>
   </div>
 
+
+  <div class="container text-center" id="toc-container">
+    <div class="accordion">
+      <div class="text-center" data-toggle="collapse" data-target="#toc-qm">
+        <button type="button" class="btn btn-outline-info">Table of Contents</button>
+      </div>
+      <div class="collapse text-center" id="toc-qm" data-parent="#toc-container">
+        <div class="card mb-4 shadow-lg toc-card">
+          <div class="card-body">
+            <p class="toc-p"><a href="#moment-of-inertia">Moment of Inertia <i class="fa fa-link"></i></a></p>
+            <p class="toc-p"><a href="#lagrangian-formulation">Lagrangian Formulation <i class="fa fa-link"></i></a></p>
+            <p class="toc-p"><a href="#hamiltonian-formulation">Hamiltonian Formulation  <i class="fa fa-link"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container" id="top-container">
-    <h4>Moment of Inertia</h4>
+    <h4 id="moment-of-inertia">Moment of Inertia</h4>
     <div class="accordion">
       <!-- ######################## -->
       <div class="card">
@@ -174,7 +193,7 @@
     </div>
 
 
-    <h4>Lagrangian Formulation</h4>
+    <h4 id="lagrangian-formulation">Lagrangian Formulation</h4>
     <p class="p-subtitle">Euler-Lagrange Equations. </p>
     <div class="accordion">
       <!-- ######################## -->
@@ -196,7 +215,7 @@
               The principle of least action states that a system will behave in such a way that the action, $$S = \int \text dt\,L(q_i, \dot q_i) ,$$ takes on an extremal value: $\delta S = 0$.
             </p>
             <p align="right">
-              <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=TiWilQkZDOA" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=TiWilQkZDOA" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
               <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
             </p>
           </div>
@@ -218,7 +237,7 @@
               The principle of least action states that a system will behave in such a way that the action, $$S = \int\text d^4x\, \mathcal L(\varphi_i,\partial_\mu \varphi_i) ,$$ takes on an extremal value: $\delta S = 0$.
             </p>
             <p align="right">
-              <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=TiWilQkZDOA" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=TiWilQkZDOA" class="btn btn-outline-danger">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp;
               <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
             </p>
           </div>
@@ -227,7 +246,7 @@
     </div>
 
 
-    <h4>Hamiltonian Formulation</h4>
+    <h4 id="hamiltonian-formulation">Hamiltonian Formulation</h4>
     <p class="p-subtitle">Legendre transformations and conjugated momenta. </p>
     <div class="accordion">
       <!-- ######################## -->
