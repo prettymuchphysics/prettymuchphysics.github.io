@@ -221,3 +221,23 @@ li>p>a {
 .card-header h4 {
   padding-top: 0px;
 }
+
+.my-card {
+  width: 230px;
+}
+
+@media screen and (max-width:773px) {
+  .my-card {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .row {
+    justify-content: center;
+  }
+}
+
+.my-padding {
+  padding-right: 20px;
+}
