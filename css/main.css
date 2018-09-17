@@ -226,13 +226,16 @@ li>p>a {
   width: 230px;
 }
 
-@media screen and (max-width:773px) {
+@media screen and (max-width:778px) {
   .my-card {
-    width: 190px;
+    width: 210px;
+  }
+  .row {
+    justify-content: space-between;
   }
 }
 
-@media screen and (max-width:660px) {
+@media screen and (max-width:719px) {
   .row {
     justify-content: center;
   }
