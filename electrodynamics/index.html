@@ -162,7 +162,71 @@
         </div>
       </div>
       <!-- ######################## -->
-
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-iphQzM6CVpdH">
+          <h5 class="mb-0">Two Spheres</h5>
+        </div>
+        <div id="collapse-iphQzM6CVpdH" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              A sphere of radius $R_0$ lies at the center of a coordinate system. At a point $\textbf a$ within the sphere lies another sphere of radius $r_0$ ($r_0&lt;R_0$), such that the smaller sphere is completely within the greater sphere ($|\textbf a|+r_0\le
+              R_0$). The volume within the two spheres is filled with a constant charge density $\rho_0$.
+            </p>
+            <p>
+              Calculate the electrostatic potential $\phi(\textbf r)$ and the corresponding electric field $\textbf E(\textbf r)$ for the volume within the smaller sphere, where there is no charge. &ensp;
+              <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintA-iphQzM6CVpdH" aria-expanded="false" aria-controls="collapse-hintA-iphQzM6CVpdH">
+                Hint
+              </button></p>
+            <p class="collapse hint" id="collapse-hintA-iphQzM6CVpdH">
+              Use superposition: one sphere with charge density $\rho_0$ and one with charge density $-\rho_0$.
+            </p>
+            <p align="right">
+              <!-- <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+      <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#collapse-ufqxKZz5b7L9">
+          <h5 class="mb-0">Electric Field of a Point Charge</h5>
+        </div>
+        <div id="collapse-ufqxKZz5b7L9" class="collapse" data-parent="#top-container">
+          <div class="card-body">
+            <p>
+              For a point charge $q$ at the origin of the coordinate system, the electric field is given by $\textbf R(\textbf r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2}\frac{\textbf r}{|\textbf r|}$.
+            </p>
+            <ol type="a">
+              <li>
+                <p>Show that $\nabla \cdot \textbf E = \frac{q}{\epsilon_0}\delta^{(3)}(\textbf r)$! &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintA-ufqxKZz5b7L9" aria-expanded="false" aria-controls="collapse-hintA-ufqxKZz5b7L9">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintA-ufqxKZz5b7L9">
+                  Treat $r=0$ and $r\neq 0$ separately.
+                </p>
+              </li>
+              <li>
+                <p>Show that $\nabla\times \textbf E = 0$! &ensp;
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-toggle="collapse" data-target="#collapse-hintB-ufqxKZz5b7L9" aria-expanded="false" aria-controls="collapse-hintB-ufqxKZz5b7L9">
+                  Hint
+                </button></p>
+                <p class="collapse hint" id="collapse-hintB-ufqxKZz5b7L9">
+                  For $r=0$, write the curl as $$\nabla\times \textbf E = \lim\limits_{V\to 0}\int\limits_{\partial V}\text d\textbf f \times E,$$where $\partial V$ is the boundary of the volume $V$ and $\text d\textbf f$ is an infinitesimally small element on the boundary
+                  of $V$ such that the normal vector $\textbf f$ point outwards. Bonus points for proving this equation (Hint: use the volume of a small cube, such that the normal vectors point in $x$, $y$ and $z$ direction and assume that the vector
+                  field in question is smooth)!
+                </p>
+              </li>
+            </ol>
+            <p align="right">
+              <!-- <a target="_blank" rel="noopener noreferrer" href="#" class="btn btn-outline-danger disabled">Solution <i class="fa fa-youtube-play hover-red" aria-hidden="true"></i></a>&ensp; -->
+              <!-- <a href="http://google.com" class="btn btn-outline-secondary">Source</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
     </div>
 
 
